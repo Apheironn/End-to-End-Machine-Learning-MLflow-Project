@@ -13,7 +13,7 @@ class DataValidation:
             validation_status = None
 
             df = pd.read_csv(self.config.unzip_data_dir)
-
+            
             df["TorquePower"] = [None if str(i) == "nan" else int(i.split("@")[0]) if len(i.split(" ")) == 1 else int(i.split(" ")[0]) for i in df["Max Torque"]]
             df["TorquePowerRPM"] = [None if str(i) == "nan" else int(i.split("@")[1]) if len(i.split(" ")) == 1 else int(i.split(" ")[-2]) for i in df["Max Torque"]]
             df["HorsePower"] = [None if str(i) == "nan" else int(i.split("@")[0]) if len(i.split(" ")) == 1 else int(i.split(" ")[0]) for i in df["Max Power"]]
@@ -27,7 +27,11 @@ class DataValidation:
             df[num_features] = df[num_features].fillna(df[num_features].mean())
             df[cat_features] = df[cat_features].fillna(df[cat_features].mode().iloc[0])
             
+            
             data=df
+            
+            data.to_csv(f"{self.config.root_dir}/cars.csv",index=False)
+            
             all_cols = list(data.columns)
 
             all_schema = self.config.all_schema.keys()
