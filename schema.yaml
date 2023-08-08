@@ -1,1 +1,23 @@
-key: value
+COLUMNS:
+  Make                :   object 
+  Year                :   int64  
+  Kilometer           :   int64  
+  Fuel Type           :   object 
+  Transmission        :   object 
+  Color               :   object 
+  Owner               :   object 
+  Seller Type         :   object 
+  Engine              :   float64
+  Drivetrain          :   object 
+  Length              :   float64
+  Width               :   float64
+  Height              :   float64
+  Seating Capacity    :   float64
+  Fuel Tank Capacity  :   float64
+  TorquePower         :   float64
+  TorquePowerRPM      :   float64
+  HorsePower          :   float64
+  HorsePowerRPM       :   float64
+
+TARGET_COLUMN:
+  name: Price
