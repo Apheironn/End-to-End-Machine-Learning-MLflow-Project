@@ -1,9 +1,9 @@
 DecisionTreeRegressor: 
-  max_depth: 1
+  max_depth: 50
   max_features: 'sqrt'
   max_leaf_nodes: 2
   min_impurity_decrease: 0.1
   min_samples_leaf: 1
-  min_samples_split: 10
+  min_samples_split: 50
   splitter: 'best'
 
