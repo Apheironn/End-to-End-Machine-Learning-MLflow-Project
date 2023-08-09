@@ -12,6 +12,4 @@ joblib
 types-PyYAML
 Flask
 Flask-Cors
-catboost
-xgboost
 -e .
