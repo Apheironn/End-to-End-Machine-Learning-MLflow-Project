@@ -1,9 +1,10 @@
-DecisionTreeRegressor: 
-  max_depth: 50
-  max_features: 'sqrt'
-  max_leaf_nodes: 2
-  min_impurity_decrease: 0.1
-  min_samples_leaf: 1
-  min_samples_split: 50
+DecisionTreeRegressor:
+  max_depth:   #None
+  max_features:   #None
+  max_leaf_nodes:   #None
+  min_impurity_decrease: 0.0  # Adjusted within the valid range
+  min_samples_leaf: 1  # Adjusted within the valid range
+  min_samples_split: 5  # Adjusted within the valid range
   splitter: 'best'
+
 

@@ -23,13 +23,36 @@ def index():
     if request.method == 'POST':
         try:
             #  reading the inputs given by the user
+            print("post")
+            brand       =   str(request.form["brand"]) 
+            year        =   int(request.form["year"])  
+            kilometer   =   int(request.form["kilometer"])  
+            fuel_type   =   str(request.form["fuel_type"]) 
+            transmission =   str(request.form["transmission"]) 
+            color        =   str(request.form["color"]) 
+            owner        =  str(request.form["owner"]) 
+            seller_type   =   str(request.form["seller_type"]) 
+            engine        =  int(request.form["engine"])
+            drivetrain    =  str(request.form["drivetrain"]) 
+            length        =  int(request.form["length"])
+            width        =   int(request.form["width"])
+            height       =  int(request.form["height"])
+            seating    =   int(request.form["seating"])
+            fuel_tank  =   int(request.form["fuel_tank"])
+            torque_power    =   int(request.form["torque_power"])
+            tp_rpm    =   int(request.form["tp_rpm"])
+            horse_power     =   int(request.form["horse_power"])
+            hp_rpm    =  int(request.form["hp_rpm"])
 
-            data = np.array(data).reshape(1, 11)
+            data = [brand, year, kilometer, fuel_type, transmission, color,
+                    owner, seller_type, engine, drivetrain, length, width,
+                    height, seating, fuel_tank, torque_power, tp_rpm, horse_power, hp_rpm]
             
             obj = PredictionPipeline()
             predict = obj.predict(data)
+            print(predict)
 
-            return render_template('results.html', prediction = str(predict))
+            return render_template('results.html', prediction = str("{:.2f}".format(predict[0])))
 
         except Exception as e:
             print('The Exception message is: ',e)
@@ -41,4 +64,4 @@ def index():
 
 if __name__ == "__main__":
 	# app.run(host="0.0.0.0", port = 8080, debug=True)
-	app.run(host="0.0.0.0", port = 8080)
+	app.run(host="0.0.0.0", port = 8080, debug=True)
