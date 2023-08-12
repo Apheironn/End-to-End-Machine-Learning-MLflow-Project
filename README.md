@@ -88,7 +88,43 @@ Finally,
 localhost:8080/
 ```
 
+### Project Stages
 
+Create a Repository In Github Account:
+* Created a new GitHub repository to host the project, making version control and collaboration easier.
+
+Create Structure Using template.py:
+* Organized the project structure using a Template.py file, establishing a clear layout for code and resources.
+
+Implementing setup.py:
+* Implemented a setup.py file to define project dependencies and metadata, simplifying package installation and distribution.
+
+Logging Implementation:
+* Integrated logging mechanisms throughout the project, allowing effective tracking of code execution and error debugging.
+
+Data Ingestion:
+* Developed data ingestion routines to fetch data from various sources (databases, files, APIs) and prepare it for further processing.
+
+Data Validation:
+* Implemented data validation steps to ensure the integrity and quality of incoming data, reducing the risk of incorrect inputs.
+
+Data Transformation:
+* Applied data transformation techniques, such as feature engineering and preprocessing, to prepare data for model training.
+
+Model Trainer:
+* Developed the model training phase, including selecting an appropriate algorithm, tuning hyperparameters, and fitting the model to the training data.
+
+Prediction Pipeline:
+* Created a prediction pipeline that takes in new data, applies the necessary transformations, and generates predictions using the trained model.
+
+Set MLflow and Docker:
+* Integrated MLflow to track experiments, model versions, and performance metrics, enhancing model management and reproducibility.
+* Set up Docker to containerize the application, ensuring consistency in deployment environments.
+
+Deployment In EC2 with App Runner on AWS CI/CD:
+* Utilized AWS EC2 instances for deployment, providing scalable and customizable infrastructure for hosting the application.
+* Employed AWS App Runner to streamline the deployment process, automating application scaling and management.
+* Implemented Continuous Integration/Continuous Deployment (CI/CD) pipelines to automate testing, building, and deploying updates to the application on AWS, ensuring a smoother development and deployment workflow.
 
 
 
