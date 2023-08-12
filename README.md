@@ -110,7 +110,7 @@ Run this to export as env variables:
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 860307787525.dkr.ecr.eu-north-1.amazonaws.com/mlproj
+    - Save the URI: 
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
