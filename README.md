@@ -1,5 +1,8 @@
 # End-to-End-Machine-Learning-MLflow-Project
 
+![HomepageUI](./img/project_chart.png)
+
+
 ### Introduction About the Data :
 
 **The dataset** The goal is to predict `price` of given house (Regression Analysis).
