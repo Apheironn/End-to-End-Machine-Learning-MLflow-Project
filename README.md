@@ -88,7 +88,7 @@ Finally,
 localhost:8080/
 ```
 
-### Project Stages
+# Project Stages:
 
 Create a Repository In Github Account:
 * Created a new GitHub repository to host the project, making version control and collaboration easier.
