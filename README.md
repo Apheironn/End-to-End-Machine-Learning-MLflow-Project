@@ -5,7 +5,7 @@
 
 ### Introduction About the Data :
 
-**The dataset** The goal is to predict `price` of given house (Regression Analysis).
+**The dataset** The goal is to predict `price` of given car (Regression Analysis).
 
 There are 19 independent variables:
 
