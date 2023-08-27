@@ -49,7 +49,7 @@ https://www.kaggle.com/datasets/nehalbirla/vehicle-dataset-from-cardekho?select=
 Clone the repository
 
 ```bash
-https://github.com/entbappy/End-to-end-Machine-Learning-Project-with-MLflow
+https://github.com/Apheironn/End-to-end-Machine-Learning-Project-with-MLflow
 ```
 ### STEP 01- Create a conda environment after opening the repository
 
